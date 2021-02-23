@@ -1,0 +1,553 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(44, 118, 238);
+  color: white;
+  width: 100%;
+  height: 90px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 8px solid #e5e5e5;
+  text-align: center;
+}
+.button {
+  border-right: 1px solid white;
+  width: 20%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.button input {
+  padding: 8px;
+  color: white;
+  background-color: transparent;
+  font-size: 14px;
+  border-width: 3px;
+  border-color: white;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.title {
+  width: 50%;
+  text-align: left;
+  padding-bottom: 10px;
+  border-right: 1px solid white;
+  padding-left: 20px;
+}
+
+p.title {
+  font-size: 24px;
+}
+
+.p-title a {
+  color: white;
+  font-size: 14px;
+}
+
+.view {
+  width: 10%;
+  border-right: 1px solid white;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.view a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.link {
+  width: 20%;
+  padding-top: 15px;
+}
+
+.link a {
+  color: white;
+  font-size: 14px;
+  border-bottom: 1px solid white;
+}
+
+.nav2 {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 14px;
+}
+
+div.dropdown ul {
+  display: flex;
+  padding: 10px 3px;
+}
+
+ul.about {
+  display: flex;
+  padding: 10px 3px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0 6px;
+}
+
+li {
+  display: block;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+.nav3 {
+  display: flex;
+  flex-direction: row;
+  background-color: whitesmoke;
+  color: grey;
+  justify-content: space-between;
+  height: 50px;
+  padding-top: 20px;
+}
+
+.nav3 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+  color: black;
+}
+.nav3 li {
+  padding-right: 7px;
+}
+
+.latest a {
+  text-decoration: none;
+  color: grey;
+  font-size: 18px;
+}
+.nav4 {
+  padding-top: 10px;
+  background-color: yellow;
+  height: 35px;
+}
+.nav4 a {
+  text-decoration: none;
+  color: black;
+}
+/* First section with row and two columns*/
+.img-section {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+.img-section p h1 a {
+  color: white;
+}
+.small-col {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.big {
+  background-image: url(./img/highlights-article-1.jpg);
+  background-size: cover;
+  margin: 5px;
+  width: 70%;
+  height: 370px;
+  text-align: left;
+  padding: 5px;
+  padding-bottom: 20px;
+  align-content: flex-end;
+}
+.big h4 {
+  padding-top: 100px;
+}
+.small {
+  background: 
+    /* top, transparent red, faked with gradient */ linear-gradient(
+      rgba(34, 23, 23, 0.45),
+      rgba(34, 23, 23, 0.45)
+    ),
+    /* bottom, image */ url(./img/highlights-article-2.webp);
+
+  background-size: cover;
+  margin: 5px;
+  height: 180px;
+}
+.small2 {
+  background-image: url(./img/highlights-article-3.webp);
+  background-size: cover;
+  margin: 5px;
+  height: 180px;
+}
+.img-title1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+  text-decoration: none;
+
+  padding-left: 3px;
+}
+.img-title {
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+  padding-top: 50px;
+  padding-left: 2px;
+}
+.big a {
+  text-decoration: none;
+  color: white;
+}
+.small a {
+  text-decoration: none;
+  color: white;
+}
+.small2 a {
+  text-decoration: none;
+  color: white;
+}
+.date {
+  text-align: right;
+  color: white;
+  padding: 3px;
+}
+cite {
+  color: white;
+}
+.checkbtn {
+  display: none;
+}
+
+.latest-funding {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.funding-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0.5rem;
+}
+
+.funding-heading h3 {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.funding-nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  color: red;
+  font-size: 15px;
+}
+
+.funding-nav ul .border {
+  border-right: 1px solid red;
+  margin-right: 1rem;
+  padding-right: 1rem;
+}
+
+.main-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 0 0.5rem;
+}
+
+.card-position {
+  position: relative;
+}
+
+.symbol {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 40px;
+}
+
+a.card-link {
+  text-decoration: none;
+}
+
+a h4 {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-color: red;
+  line-height: 2.5rem;
+}
+
+div.money {
+  background-color: rgb(254, 235, 231);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+h4.money-title {
+  color: black;
+  background-color: rgb(254, 235, 231);
+}
+
+a h5 {
+  text-decoration: none;
+  color: gray;
+  text-transform: uppercase;
+  word-spacing: 1px;
+  font-size: 11px;
+}
+
+.funding-card-box2 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 250, 248);
+}
+
+.icon {
+  display: flex;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.icon img {
+  margin-right: 1rem;
+}
+
+.icon p a {
+  text-decoration: none;
+  font-size: 14px;
+  color: rgb(22, 21, 21);
+}
+
+.img-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.funding-card-box3 {
+  border-top: 1px solid red;
+  margin-bottom: 3rem;
+  background-color: rgb(255, 250, 248);
+  height: 6rem;
+}
+
+.funding-card-box3 p {
+  padding-top: 1rem;
+}
+
+.funding-card-box3 p a {
+  text-decoration: none;
+  font-size: 13px;
+  color: rgb(22, 21, 21);
+}
+
+.funding-card-box3 p a span {
+  color: #a9b2bb;
+}
+
+/* Footer */
+
+.footer1 {
+  background-color: rgb(19, 19, 19);
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  height: 10rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.social-icons li a {
+  display: block;
+  margin-right: 8px;
+  margin-bottom: 24px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.list-items {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.list-items li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+li a img {
+  margin: 7px 3px;
+}
+
+.footer2 {
+  width: 100%;
+  display: block;
+  background-color: #000;
+  color: #a7abaf;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 35px;
+}
+
+.TNW-logo {
+  width: 40px;
+}
+
+.stockpath-logo {
+  width: 65px;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 568px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .img-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .small-col {
+    width: 100%;
+  }
+  .big {
+    width: 100%;
+    height: 150px;
+  }
+
+  .img-title1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 5px;
+    padding-left: 2px;
+  }
+  .nav4 {
+    padding-top: 1px;
+    background-color: yellow;
+    height: 20px;
+  }
+  .nav4 a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+  }
+
+  .latest a {
+    display: none;
+  }
+  .about a {
+    display: none;
+  }
+  .dropdown a {
+    display: none;
+  }
+  .nav2 {
+    background-image: url(./img/tnw.svg);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 60px;
+    height: 50px;
+    float: left;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .nav1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 3px;
+    border-right: none;
+    padding-left: 20px;
+    border-right-style: none;
+  }
+
+ .title p {
+    font-size: 15px;
+  }
+  .link a {
+    display: none;
+  }
+  .view a {
+    display: none;
+  }
+  .view {
+    border-right-style: none;
+  }
+  .checkbtn {
+    display: block;
+    float: right;
+  }
+  .nav3 {
+    display: block;
+  }
+
+  .main-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .big img {
+    display: none;
+  }
+}
